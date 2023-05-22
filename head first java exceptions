@@ -1,0 +1,11 @@
+Exceptions in Java:
+
+Exceptions are a mechanism in Java for handling runtime errors or exceptional conditions that may occur during the execution of a program.
+In Java, exceptions are represented by classes and objects. The exception classes are part of the Java standard library and are organized in a hierarchy, with the base class being java.lang.Throwable.
+Exceptions can be checked or unchecked. Checked exceptions must be declared in the method signature or handled using a try-catch block, while unchecked exceptions (also known as runtime exceptions) do not need to be explicitly declared or caught.
+The try-catch block is used to handle exceptions. The code that might throw an exception is enclosed in the try block, and the corresponding exception handlers are placed in catch blocks.
+The catch blocks are used to catch specific types of exceptions and provide error-handling code. If an exception occurs in the try block, the catch block that matches the exception type is executed.
+It is possible to have multiple catch blocks for different exception types, allowing for fine-grained exception handling.
+The finally block can be used after the try-catch block to specify code that will always be executed, regardless of whether an exception occurs or not. The finally block is typically used to release resources or perform cleanup operations.
+Java provides a throw statement that allows you to explicitly throw an exception. This can be useful in situations where you want to indicate an exceptional condition manually.
+Exceptions can also be propagated up the call stack. If a method does not handle an exception, it can declare the exception in its method signature using the throws keyword, indicating that the caller is responsible for handling the exception.
